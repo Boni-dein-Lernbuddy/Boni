@@ -34,16 +34,14 @@ export class FoldersMockService {
                 isUpdated: true,
                 children: [],
                 feedItems: []
-            },
-            {
+            }, {
                 id: 8,
                 name: 'Zuordnungen',
                 parent: root,
                 isUpdated: true,
                 children: [],
                 feedItems: []
-            },
-            {
+            }, {
                 id: 10,
                 name: 'Der Funktionsgraph',
                 parent: root,

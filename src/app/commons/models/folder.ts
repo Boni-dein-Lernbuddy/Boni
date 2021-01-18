@@ -1,7 +1,6 @@
 import { FeedItem } from './feed-item';
 
 export interface Folder {
-
     id: number;
     name: string;
     isUpdated?: boolean;

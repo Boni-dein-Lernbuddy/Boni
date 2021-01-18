@@ -6,7 +6,6 @@ export const STUDENT_MENU_ID = 'student-menu';
 export type MenuId = typeof TEACHER_MENU_ID | typeof STUDENT_MENU_ID;
 
 export abstract class AbstractMenuBaseComponent {
-
     protected constructor(
         private controller: MenuController,
         private id: MenuId
