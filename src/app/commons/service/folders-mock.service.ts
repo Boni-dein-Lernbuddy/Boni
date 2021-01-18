@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Folder } from '../models/folder';
+import { Folder } from '../models/Folder';
 
 @Injectable({
     providedIn: 'root'

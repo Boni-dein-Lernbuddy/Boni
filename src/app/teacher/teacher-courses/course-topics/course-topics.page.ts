@@ -5,7 +5,7 @@ import { MenuController } from '@ionic/angular';
 import {
     AbstractMenuBaseComponent, TEACHER_MENU_ID
 } from '../../../commons/components/AbstractMenuBase.component';
-import { Folder } from '../../../commons/models/folder';
+import { Folder } from '../../../commons/models/Folder';
 import { FoldersMockService } from '../../../commons/service/folders-mock.service';
 
 @Component({

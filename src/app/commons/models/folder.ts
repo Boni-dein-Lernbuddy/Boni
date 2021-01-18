@@ -1,4 +1,4 @@
-import { FeedItem } from './feed-item';
+import { FeedItem } from './FeedItem';
 
 export interface Folder {
     id: number;

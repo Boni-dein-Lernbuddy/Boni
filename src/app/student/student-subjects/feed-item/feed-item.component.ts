@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { FeedItem } from '../../../commons/models/feed-item';
-import { LinkPreview } from '../../../commons/models/link-preview';
+import { FeedItem } from '../../../commons/models/FeedItem';
+import { LinkPreview } from '../../../commons/models/LinkPreview';
 import { LinkPreviewService } from '../../../commons/service/link-preview.service';
 
 @Component({
