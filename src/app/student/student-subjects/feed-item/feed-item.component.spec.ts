@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
@@ -10,11 +11,15 @@ describe('FeedItemComponent', () => {
     beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             declarations: [FeedItemComponent],
-            imports: [IonicModule.forRoot()]
+            imports: [
+                IonicModule.forRoot(),
+                HttpClientTestingModule
+            ]
         }).compileComponents();
 
         fixture = TestBed.createComponent(FeedItemComponent);
         component = fixture.componentInstance;
+        component.item = { id: 123, type: 'text' };
         fixture.detectChanges();
     }));
 
