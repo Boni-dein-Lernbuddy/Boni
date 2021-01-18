@@ -11,15 +11,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonsModule } from './commons/commons.module';
-import { HomeViewComponent } from './home-view/home-view/home-view.component';
 
 registerLocaleData(localeDe);
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeViewComponent
-    ],
+    declarations: [AppComponent],
     imports: [
         AppRoutingModule,
         BrowserModule,

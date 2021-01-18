@@ -15,7 +15,10 @@ const routes: Routes = [{
         }, {
             path: 'subjects',
             component: StudentSubjectsComponent
-            // TODO Structure similarly to `TeacherRoutingModule` (with route for subjects & topics)
+        }, {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'overview'
         }
     ]
 }];
