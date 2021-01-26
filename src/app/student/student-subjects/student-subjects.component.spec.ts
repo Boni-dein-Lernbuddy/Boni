@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
+import { CommonsModule } from '../../commons/commons.module';
 import { StudentSubjectsComponent } from './student-subjects.component';
 
 describe('StudentSubjectsComponent', () => {
@@ -10,7 +11,10 @@ describe('StudentSubjectsComponent', () => {
     beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             declarations: [StudentSubjectsComponent],
-            imports: [IonicModule.forRoot()]
+            imports: [
+                CommonsModule,
+                IonicModule.forRoot()
+            ]
         }).compileComponents();
 
         fixture = TestBed.createComponent(StudentSubjectsComponent);
