@@ -6,15 +6,15 @@ import { SubjectsComponent } from './subjects/subjects.component';
 
 const ROUTES: Routes = [
     {
-        path: 'uebersicht',
+        path: 'übersicht',
         component: OverviewComponent
     }, {
-        path: 'meine-faecher',
+        path: 'meine-fächer',
         component: SubjectsComponent
     }, {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'uebersicht'
+        redirectTo: 'übersicht'
     }
 ];
 
