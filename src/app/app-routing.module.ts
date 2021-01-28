@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
+import { StudentOverviewComponent } from './student-overview/student-overview.component';
+import { StudentSubjectsComponent } from './student-subjects/student-subjects.component';
+
+const ROUTES: Routes = [
     {
-        path: 'student',
-        loadChildren: () => import('./student/student.module').then(m => m.StudentModule),
+        path: 'student/overview',
+        component: StudentOverviewComponent
+    }, {
+        path: 'student/subjects',
+        component: StudentSubjectsComponent
     }, {
         path: '',
         pathMatch: 'full',
@@ -13,9 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-    ],
+    imports: [RouterModule.forRoot(ROUTES)],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

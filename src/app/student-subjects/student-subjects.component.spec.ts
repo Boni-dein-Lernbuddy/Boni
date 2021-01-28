@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CommonsModule } from '../../commons/commons.module';
+import { CommonsModule } from '../commons/commons.module';
 import { StudentSubjectsComponent } from './student-subjects.component';
 
 describe('StudentSubjectsComponent', () => {

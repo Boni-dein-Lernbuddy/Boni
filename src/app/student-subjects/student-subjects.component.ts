@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
-import { AbstractMenuBaseComponent, STUDENT_MENU_ID } from '../../commons/components/AbstractMenuBase.component';
-import { Folder } from '../../commons/models/Folder';
-import { FoldersMockService } from '../../commons/service/folders-mock.service';
+import { AbstractMenuBaseComponent, STUDENT_MENU_ID } from '../commons/components/AbstractMenuBase.component';
+import { Folder } from '../commons/models/Folder';
+import { FoldersMockService } from '../commons/service/folders-mock.service';
 
 @Component({
     selector: 'app-student-subjects',
