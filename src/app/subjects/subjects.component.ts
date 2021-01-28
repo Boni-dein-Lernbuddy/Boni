@@ -7,10 +7,10 @@ import { FoldersMockService } from '../commons/service/folders-mock.service';
 
 @Component({
     selector: 'app-student-subjects',
-    templateUrl: './student-subjects.component.html',
-    styleUrls: ['./student-subjects.component.scss']
+    templateUrl: './subjects.component.html',
+    styleUrls: ['./subjects.component.scss']
 })
-export class StudentSubjectsComponent extends AbstractMenuBaseComponent implements OnInit {
+export class SubjectsComponent extends AbstractMenuBaseComponent implements OnInit {
     currentFolder: Folder;
 
     constructor(

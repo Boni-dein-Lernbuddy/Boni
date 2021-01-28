@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { StudentOverviewComponent } from './student-overview/student-overview.component';
-import { StudentSubjectsComponent } from './student-subjects/student-subjects.component';
+import { OverviewComponent } from './overview/overview.component';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 const ROUTES: Routes = [
     {
         path: 'uebersicht',
-        component: StudentOverviewComponent
+        component: OverviewComponent
     }, {
         path: 'meine-faecher',
-        component: StudentSubjectsComponent
+        component: SubjectsComponent
     }, {
         path: '',
         pathMatch: 'full',

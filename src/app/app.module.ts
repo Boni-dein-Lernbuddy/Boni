@@ -12,9 +12,9 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonsModule } from './commons/commons.module';
-import { StudentOverviewComponent } from './student-overview/student-overview.component';
-import { FeedItemComponent } from './student-subjects/feed-item/feed-item.component';
-import { StudentSubjectsComponent } from './student-subjects/student-subjects.component';
+import { OverviewComponent } from './overview/overview.component';
+import { FeedItemComponent } from './subjects/feed-item/feed-item.component';
+import { SubjectsComponent } from './subjects/subjects.component';
 
 registerLocaleData(localeDe);
 
@@ -22,8 +22,8 @@ registerLocaleData(localeDe);
     declarations: [
         AppComponent,
         FeedItemComponent,
-        StudentOverviewComponent,
-        StudentSubjectsComponent
+        OverviewComponent,
+        SubjectsComponent
     ],
     imports: [
         AppRoutingModule,

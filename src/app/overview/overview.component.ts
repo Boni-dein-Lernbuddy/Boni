@@ -4,11 +4,11 @@ import { MenuController } from '@ionic/angular';
 import { AbstractMenuBaseComponent } from '../commons/components/AbstractMenuBase.component';
 
 @Component({
-    selector: 'app-student-overview',
-    templateUrl: './student-overview.component.html',
-    styleUrls: ['./student-overview.component.scss']
+    selector: 'app-overview',
+    templateUrl: './overview.component.html',
+    styleUrls: ['./overview.component.scss']
 })
-export class StudentOverviewComponent extends AbstractMenuBaseComponent {
+export class OverviewComponent extends AbstractMenuBaseComponent {
     constructor(menu: MenuController) {
         super(menu);
     }
