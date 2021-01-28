@@ -22,7 +22,8 @@
     <ion-grid>
         <ion-row>
             <ion-col>
-                <ion-card class="ion-no-margin" routerLink="/student/current-subject" routerDirection="forward">
+                <ion-card class="ion-no-margin" routerLink="/aktuelles-fach" routerDirection="forward"
+                    [disabled]="true">
                     <ion-card-content>
                         <div class="tile-wrapper">
                             <ion-icon name="log-out-outline"></ion-icon>
@@ -33,7 +34,7 @@
             </ion-col>
 
             <ion-col>
-                <ion-card class="ion-no-margin" routerLink="/student/subjects" routerDirection="forward">
+                <ion-card class="ion-no-margin" routerLink="/meine-faecher" routerDirection="forward">
                     <ion-card-content>
                         <div class="tile-wrapper">
                             <ion-icon name="layers-outline"></ion-icon>
@@ -46,8 +47,7 @@
 
         <ion-row>
             <ion-col>
-                <ion-card class="ion-no-margin" routerLink="/student/schedule" routerDirection="forward"
-                    [disabled]="true">
+                <ion-card class="ion-no-margin" routerLink="/stundenplan" routerDirection="forward" [disabled]="true">
                     <ion-card-content>
                         <div class="tile-wrapper">
                             <ion-icon name="list-outline"></ion-icon>
@@ -58,8 +58,7 @@
             </ion-col>
 
             <ion-col>
-                <ion-card class="ion-no-margin" routerLink="/student/appointments" routerDirection="forward"
-                    [disabled]="true">
+                <ion-card class="ion-no-margin" routerLink="/termine" routerDirection="forward" [disabled]="true">
                     <ion-card-content>
                         <div class="tile-wrapper">
                             <ion-icon name="calendar-outline"></ion-icon>

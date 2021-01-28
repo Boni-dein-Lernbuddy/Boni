@@ -9,7 +9,7 @@ export class FoldersMockService {
     getFolderStructure(): Folder {
         const root: Folder = {
             id: 0,
-            name: 'Deine Fächer',
+            name: 'Meine Fächer',
             msg: 'Hier findest du eine Übersicht über all deine Fächer.',
             children: []
         };

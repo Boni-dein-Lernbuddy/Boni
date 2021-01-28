@@ -8,27 +8,23 @@
 
         <ion-content>
             <ion-list (click)="closeMenu()">
-                <ion-item routerLink="/" routerDirection="forward">
-                    Startseite
-                </ion-item>
-
-                <ion-item routerLink="/student/overview" routerDirection="forward">
+                <ion-item routerLink="/uebersicht" routerDirection="forward">
                     Übersicht
                 </ion-item>
 
-                <ion-item routerLink="/student/current-subject" routerDirection="forward">
+                <ion-item routerLink="/aktuelles-fach" routerDirection="forward" [disabled]="true">
                     Aktuelles Fach
                 </ion-item>
 
-                <ion-item routerLink="/student/subjects" routerDirection="forward">
+                <ion-item routerLink="/meine-faecher" routerDirection="forward">
                     Meine Fächer
                 </ion-item>
 
-                <ion-item routerLink="/student/schedule" routerDirection="forward" [disabled]="true">
+                <ion-item routerLink="/stundenplan" routerDirection="forward" [disabled]="true">
                     Stundenplan
                 </ion-item>
 
-                <ion-item routerLink="/student/appointments" routerDirection="forward" [disabled]="true">
+                <ion-item routerLink="/termine" routerDirection="forward" [disabled]="true">
                     Termine
                 </ion-item>
             </ion-list>
