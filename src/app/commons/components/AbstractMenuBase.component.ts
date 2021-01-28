@@ -1,24 +1,19 @@
 import { MenuController } from '@ionic/angular';
 
-export const STUDENT_MENU_ID = 'student-menu';
-
-export type MenuId = typeof STUDENT_MENU_ID;
-
 export abstract class AbstractMenuBaseComponent {
-    protected constructor(
-        private controller: MenuController,
-        private id: MenuId
-    ) { }
+    menuId: 'menu-base' = 'menu-base';
+
+    protected constructor(private controller: MenuController) { }
 
     openMenu() {
-        this.controller.open(this.id)
+        this.controller.open(this.menuId)
             .then(() => { })
-            .catch(error => console.error(error));
+            .catch(console.error);
     }
 
     closeMenu() {
-        this.controller.close(this.id)
+        this.controller.close(this.menuId)
             .then(() => { })
-            .catch(error => console.error(error));
+            .catch(console.error);
     }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
-import { AbstractMenuBaseComponent, STUDENT_MENU_ID } from '../commons/components/AbstractMenuBase.component';
+import { AbstractMenuBaseComponent } from '../commons/components/AbstractMenuBase.component';
 
 @Component({
     selector: 'app-student-overview',
@@ -10,6 +10,6 @@ import { AbstractMenuBaseComponent, STUDENT_MENU_ID } from '../commons/component
 })
 export class StudentOverviewComponent extends AbstractMenuBaseComponent {
     constructor(menu: MenuController) {
-        super(menu, STUDENT_MENU_ID);
+        super(menu);
     }
 }

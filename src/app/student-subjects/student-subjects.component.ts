@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
-import { AbstractMenuBaseComponent, STUDENT_MENU_ID } from '../commons/components/AbstractMenuBase.component';
+import { AbstractMenuBaseComponent } from '../commons/components/AbstractMenuBase.component';
 import { Folder } from '../commons/models/Folder';
 import { FoldersMockService } from '../commons/service/folders-mock.service';
 
@@ -15,13 +15,13 @@ export class StudentSubjectsComponent extends AbstractMenuBaseComponent implemen
 
     constructor(
         private menu: MenuController,
-        private mock: FoldersMockService
+        private folders: FoldersMockService
     ) {
-        super(menu, STUDENT_MENU_ID);
+        super(menu);
     }
 
     ngOnInit() {
-        this.currentFolder = this.mock.getFolderStructure();
+        this.currentFolder = this.folders.getFolderStructure();
     }
 
     public selectFolder(folder: Folder) {
