@@ -42,6 +42,6 @@ export class SubjectsComponent extends AbstractMenuBaseComponent implements OnIn
     }
 
     public get isCurrentFolderEmpty(): boolean {
-        return !this.currentFolder.children.length && !this.currentFolder.feedItems.length;
+        return !this.currentFolder.children?.length && !this.currentFolder.feedItems?.length;
     }
 }

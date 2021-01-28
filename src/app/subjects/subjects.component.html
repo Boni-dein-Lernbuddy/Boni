@@ -38,6 +38,6 @@
     </ion-list>
 
     <div class="feed-wrapper" *ngIf="currentFolder?.feedItems?.length">
-        <app-feed-item *ngFor="let item of currentFolder?.feedItems" [item]="item"></app-feed-item>
+        <app-feed-item *ngFor="let item of currentFolder.feedItems" [item]="item"></app-feed-item>
     </div>
 </ion-content>
