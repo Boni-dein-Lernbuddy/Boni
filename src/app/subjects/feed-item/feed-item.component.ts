@@ -29,7 +29,7 @@ export class FeedItemComponent implements OnInit {
         }
     }
 
-    public openLink(url: string) {
+    openLink(url: string) {
         window.open(url, '_blank');
     }
 }

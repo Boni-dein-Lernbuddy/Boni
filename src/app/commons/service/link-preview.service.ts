@@ -12,7 +12,7 @@ export class LinkPreviewService {
 
     constructor(private http: HttpClient) { }
 
-    public getLinkPreview(requestUrl: string): Observable<any> {
+    getLinkPreview(requestUrl: string): Observable<any> {
         const params = `?key=${this.apiKey}&q=${requestUrl}`;
         return this.http.get(this.apiUrl.concat(params));
     }

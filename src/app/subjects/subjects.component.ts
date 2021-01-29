@@ -24,11 +24,11 @@ export class SubjectsComponent extends AbstractMenuBaseComponent implements OnIn
         this.currentFolder = this.folders.getFolderStructure();
     }
 
-    public selectFolder(folder: Folder) {
+    selectFolder(folder: Folder) {
         this.currentFolder = folder;
     }
 
-    public get navTitleFolders(): Folder[] {
+    get navTitleFolders(): Folder[] {
         const folders: Folder[] = [];
 
         folders.push(this.currentFolder);
@@ -41,7 +41,7 @@ export class SubjectsComponent extends AbstractMenuBaseComponent implements OnIn
         return folders.reverse();
     }
 
-    public get isCurrentFolderEmpty(): boolean {
+    get isCurrentFolderEmpty(): boolean {
         return !this.currentFolder.children?.length && !this.currentFolder.feedItems?.length;
     }
 }
