@@ -41,6 +41,12 @@ export class SubjectsComponent extends AbstractMenuBaseComponent implements OnIn
         return folders.reverse();
     }
 
+    get navTitle(): string {
+        return this.navTitleFolders
+            .map(f => f.name)
+            .join(' / ');
+    }
+
     get isCurrentFolderEmpty(): boolean {
         return !this.currentFolder.children?.length && !this.currentFolder.feedItems?.length;
     }

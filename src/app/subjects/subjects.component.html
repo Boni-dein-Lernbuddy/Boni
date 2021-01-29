@@ -6,7 +6,7 @@
             </ion-button>
         </ion-buttons>
 
-        <ion-title class="toolbar-title" color="primary" *ngIf="currentFolder">
+        <ion-title class="toolbar-title" color="primary" *ngIf="currentFolder" [title]="navTitle">
             <span (click)="selectFolder(folder)" *ngFor="let folder of navTitleFolders; last as last">
                 {{ folder?.name }}
                 {{ last ? '' : ' / ' }}
@@ -27,7 +27,7 @@
 
     <ion-list class="folders-wrapper" *ngIf="currentFolder?.children?.length">
         <ion-item class="folder" *ngFor="let child of currentFolder.children" (click)="selectFolder(child)">
-            <ion-label>{{ child.name }}</ion-label>
+            <ion-label [title]="child.name">{{ child.name }}</ion-label>
 
             <ion-chip *ngIf="child.isUpdated" color="success">
                 <ion-label>Neu</ion-label>
